@@ -1,6 +1,14 @@
 # frozen_string_literal: true
 
+require "bundler/setup"
+
 require "esp_adapter"
+require "pry"
+require "webmock/rspec"
+require "simplecov"
+SimpleCov.start "rails"
+
+require "active_support/core_ext/hash/indifferent_access"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
